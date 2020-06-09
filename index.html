@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script src="https://unpkg.com/preact"></script>
+    
+</head>
+<body>
+    <div id="root"><!--html--></div>
+    <script>
+        const app = preact.h('h1', { className: 'client', id: 'id_client' }, 'CLIENT');
+      
+        // preact.render(app, document.getElementById('root')); // it works
+        preact.render(app, document.getElementById('root'));
+    </script>
+</body>
+</html>
